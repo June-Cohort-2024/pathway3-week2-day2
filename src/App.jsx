@@ -6,6 +6,7 @@ import { ComponentHome } from './Components/ComponentHome'
 import { ComponentAbout } from './Components/ComponentAbout'
 import { ComponentCalculator } from './Components/ComponentCalculator'
 import { ComponentError } from './Components/ComponentError'
+import { Menu } from './Components/Menu'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <Menu/>
         <Routes>
           <Route path='/'  element={<ComponentHome />} ></Route>
           <Route path='/about' element={<ComponentAbout />} ></Route>
